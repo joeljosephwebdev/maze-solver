@@ -1,16 +1,17 @@
 from cell import Cell
+from graphics import Window
 import time
 
 class Maze:
     def __init__(
         self,
-        x1,
-        y1,
-        num_rows,
-        num_cols,
-        cell_size_x,
-        cell_size_y,
-        win,
+        x1 : int,
+        y1 : int,
+        num_rows : int,
+        num_cols : int,
+        cell_size_x : int,
+        cell_size_y : int,
+        win : Window = None,
     ):
         self._cells = []
         self._x1 = x1
